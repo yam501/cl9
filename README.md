@@ -8,3 +8,4 @@
 <h3>Mirel - Валера</h3>
 <h3>Mc_ilya - Илья</h3>
 
+### TO start : cd server; npm run dev

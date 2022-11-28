@@ -5,14 +5,14 @@ const Game = sequelize.define('game', {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
     idMap: { type: DataTypes.INTEGER, unique: true, allowNull: false },
     enemy: { type: DataTypes.STRING, allowNull: false },
-    result: { type: DataTypes.BOOLEAN, allowNull: false },
+    resultGame: { type: DataTypes.BOOLEAN, allowNull: false },
 })
 
 const Map = sequelize.define('map', {
     id: { type: DataTypes.INTEGER, primaryKey: true },
     time: { type: DataTypes.TIME, allowNull: false },
     side: { type: DataTypes.STRING, allowNull: false },
-    result: { type: DataTypes.BOOLEAN, allowNull: false },
+    resultMap: { type: DataTypes.INTEGER, allowNull: false },
 })
 
 const MapStat = sequelize.define('map_stat', {
