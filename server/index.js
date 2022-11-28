@@ -38,3 +38,5 @@ const start = async () => {
 }
 
 start()
+
+//TODO START OF ROUTERS https://youtu.be/H2GCkRF9eko?t=1530
