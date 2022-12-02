@@ -28,8 +28,8 @@ app.get('/team/', (req, res) => {
 
 const start = async () => {
     try {
-        await sequelize.authenticate()
-        await sequelize.sync()
+  //      await sequelize.authenticate()
+    //    await sequelize.sync()
         console.log(__dirname)
         app.listen(PORT, () => console.log('Server started on port %s', PORT))
     } catch (e) {
