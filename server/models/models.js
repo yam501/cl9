@@ -28,8 +28,7 @@ const Player = sequelize.define('player', {
     Id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
     Name: { type: DataTypes.STRING, allowNull: false },
     Nickname: { type: DataTypes.STRING, allowNull: false },
-    Photo: { type: DataTypes.STRING, allowNull: false },
-    Info: { type: DataTypes.STRING, allowNull: false },
+
 })
 
 const Hero = sequelize.define('hero', {
