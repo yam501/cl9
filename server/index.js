@@ -6,7 +6,7 @@ const cors = require('cors')
 const fileUpload = require('express-fileupload')
 const router = require('./routes/index')
 const path = require('path')
-const errorHandler = require('../middleware/ErrorHandilingMiddleware')
+const errorHandler = require('./middleware/ErrorHandilingMiddleware')
 
 const PORT = process.env.PORT
 

@@ -7,7 +7,7 @@ class PlayerController {
     async getAll(req, res, next){
         const {id} = req.query
         if (!id){
-            next(ApiError.badRequest('Не задан id'))
+            return next(ApiError.badRequest('Не задан id'))
         }
         res.json(id)
 
