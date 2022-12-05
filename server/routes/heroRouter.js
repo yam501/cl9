@@ -3,6 +3,6 @@ const router = new Router()
 const heroController = require('../controllers/heroController')
 
 router.post('/',heroController.create)
-router.get('/',heroController.getOne)
+router.get('/:Name',heroController.getOne)
 
 module.exports = router

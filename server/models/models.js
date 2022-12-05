@@ -2,24 +2,24 @@ const sequelize = require('../db')
 const { DataTypes } = require('sequelize')
 
 const Game = sequelize.define('game', {
-    id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
-    idMap: { type: DataTypes.INTEGER, unique: true, allowNull: false },
-    enemy: { type: DataTypes.STRING, allowNull: false },
-    resultGame: { type: DataTypes.BOOLEAN, allowNull: false },
+    Id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+    IdMap: { type: DataTypes.INTEGER, unique: true, allowNull: false },
+    Enemy: { type: DataTypes.STRING, allowNull: false },
+    ResultGame: { type: DataTypes.BOOLEAN, allowNull: false },
 })
 
 const Map = sequelize.define('map', {
-    id: { type: DataTypes.INTEGER, primaryKey: true },
-    time: { type: DataTypes.TIME, allowNull: false },
-    side: { type: DataTypes.STRING, allowNull: false },
-    resultMap: { type: DataTypes.INTEGER, allowNull: false },
+    Id: { type: DataTypes.INTEGER, primaryKey: true },
+    Time: { type: DataTypes.TIME, allowNull: false },
+    Side: { type: DataTypes.STRING, allowNull: false },
+    ResultMap: { type: DataTypes.INTEGER, allowNull: false },
 })
 
 const MapStat = sequelize.define('map_stat', {
-    idMap: { type: DataTypes.INTEGER, allowNull: false },
-    idPlayer: { type: DataTypes.INTEGER, allowNull: false },
-    role: { type: DataTypes.INTEGER, allowNull: false },
-    heroName: { type: DataTypes.STRING, allowNull: false },
+    IdMap: { type: DataTypes.INTEGER, allowNull: false },
+    IdPlayer: { type: DataTypes.INTEGER, allowNull: false },
+    Role: { type: DataTypes.INTEGER, allowNull: false },
+    HeroName: { type: DataTypes.STRING, allowNull: false },
     GPM: { type: DataTypes.INTEGER },
     XPM: { type: DataTypes.INTEGER },
 })

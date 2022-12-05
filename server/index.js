@@ -13,6 +13,7 @@ const PORT = process.env.PORT
 const app = express()
 app.use(cors())
 app.use(express.json())
+app.use(express.static(path.resolve(__dirname,'static'))) // Раздаем папку со статикой всем
 app.use(fileUpload({}))
 
 app.use(express.static(path.join(__dirname, '../public')))

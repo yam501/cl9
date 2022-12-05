@@ -16,15 +16,14 @@ class HeroController {
         } catch (e){
             next(ApiError.badRequest(e.message))
         }
-        
-
-
-
     }
-    async getOne(req, res){
-
-
-
+    async getOne(req, res, next){
+        const {Name} = req.params
+        const hero = await Hero.findOne({where: {Name}}) 
+        if (!Name){
+            return next(ApiError.badRequest('Не задано поле Name'))
+        }
+        res.json(hero)
     }
 }
 module.exports = new HeroController()
