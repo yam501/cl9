@@ -18,3 +18,4 @@ class PlayerController {
     }
 }  
 module.exports = new PlayerController()
+//Id, Name, Nickname, Photo, Info

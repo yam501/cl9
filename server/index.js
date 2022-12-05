@@ -46,4 +46,4 @@ const start = async () => {
 
 start()
 
-//TODO START OF ROUTERS https://youtu.be/H2GCkRF9eko?t=1530
+//TODO START OF ROUTERS https://youtu.be/H2GCkRF9eko?t=1530  37:27(работа с бд ЗАВТРА НАЧАТЬ)

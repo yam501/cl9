@@ -7,3 +7,4 @@ class MapStatController {
     }
 }
 module.exports = new MapStatController()
+//IdMap, IdPlayer,Role,Hero,GPM,XPM

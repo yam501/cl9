@@ -7,3 +7,4 @@ class MapController {
     }
 }
 module.exports = new MapController()
+//Id,Time,Side,ResultMap

@@ -7,3 +7,4 @@ class GameController {
     }
 }
 module.exports = new GameController()
+//Id,IdMap,Enemy,ResultGame
