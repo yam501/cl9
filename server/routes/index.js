@@ -9,7 +9,7 @@ const gameRouter = require('./gameRouter')
 router.use("/map", mapRouter)
 router.use("/mapstat", mapstatRouter)
 router.use("/player", playerRouter)
-router.use("/game", heroRouter)
-router.use("/hero", gameRouter)
+router.use("/game", gameRouter)
+router.use("/hero", heroRouter)
 
 module.exports = router

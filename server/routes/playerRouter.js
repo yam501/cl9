@@ -1,9 +1,8 @@
 const Router = require('express')
 const router = new Router()
+const playerController =require('../controllers/playerContoller')
 
-router.post('/',)
-router.get('/', (req, res) => {
-    res.json({ message: 'Player' })
-})
+router.post('/',playerController.create)
+router.get('/:Nickname',playerController.getOne)
 
 module.exports = router
