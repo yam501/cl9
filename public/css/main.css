@@ -153,7 +153,6 @@
      -webkit-align-items: stretch;
      -ms-flex-align: stretch;
      align-items: stretch;
-     border: 5vh none #000;
      border-radius: 0px;
      background-color: transparent;
      opacity: 1;
@@ -179,7 +178,6 @@
    
    .team_link:active {
      border-style: none;
-     background-color: #030303;
      background-clip: content-box;
      -webkit-text-fill-color: inherit;
    }
@@ -429,13 +427,21 @@
    }
    
    .players_head {
-     font-family: 'Open Sans', sans-serif;
-     color: #fff;
-     font-size: 5vh;
-     line-height: 5vh;
-     font-style: normal;
-     font-weight: 700;
-     text-align: left;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    margin: .67em 0;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 5vh;
+    line-height: 5vh;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
    }
    
    .utility-page-wrap {
@@ -616,7 +622,6 @@
      .team_link {
        border-style: none;
        background-color: transparent;
-       outline-color: #333;
        outline-offset: 3vh;
        outline-style: none;
        outline-width: 0.5vh;
@@ -644,16 +649,15 @@
      }
    
      .players_grid {
-       display: block;
-       margin-left: 15vh;
-       -webkit-box-orient: vertical;
-       -webkit-box-direction: normal;
-       -webkit-flex-direction: column;
-       -ms-flex-direction: column;
-       flex-direction: column;
-       font-family: 'Open Sans', sans-serif;
-       color: #fff;
-       font-size: 20px;
+      -webkit-text-size-adjust: 100%;
+      font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+      color: #333;
+      font-size: 14px;
+      line-height: 20px;
+      box-sizing: border-box;
+      margin-top: 16.5vh;
+      margin-left: 10vh;
+      grid-area: Area-3;
      }
    
      .paragraph-5 {
@@ -843,6 +847,14 @@
       -ms-grid-columns: minmax(2vh, auto) 0vh minmax(0vh, auto) 0vh minmax(0vh, auto);
       grid-template-columns: minmax(2vh, auto) minmax(0vh, auto) minmax(0vh, auto);
     }
+
+    .grid-3 {
+      grid-column-gap: 0vh;
+      grid-template-areas: "Area Area Area"
+        "Area-2 Area-3 Area-3";
+      -ms-grid-columns: minmax(2vh, auto) 0vh minmax(0vh, auto) 0vh minmax(0vh, auto);
+      grid-template-columns: minmax(2vh, auto) minmax(0vh, auto) minmax(0vh, auto);
+    }
    }
    
    @media screen and (max-width: 767px) {
@@ -892,6 +904,17 @@
        -ms-grid-rows: auto;
        grid-template-rows: auto;
      }
+
+     .grid-3 {
+      grid-column-gap: 0vh;
+      grid-row-gap: 0vh;
+      grid-template-areas: "Area-4 Area-4 Area-4 Area-4 Area-4 Area-4 Area-4"
+        "Area-3 Area-3 Area-3 Area-3 Area-3 Area-3 Area-3";
+      -ms-grid-columns: minmax(50vh, auto);
+      grid-template-columns: minmax(50vh, auto);
+      -ms-grid-rows: auto;
+      grid-template-rows: auto;
+    }
    }
    
    @media screen and (max-width: 479px) {
@@ -1046,6 +1069,20 @@
        background-position: 0% 50%;
        background-size: cover;
      }
+     
+     .grid-3 {
+      grid-auto-columns: auto;
+      grid-auto-rows: auto;
+      grid-column-gap: 5vh;
+      grid-row-gap: 0vh;
+      grid-template-areas: "Area Area Area Area Area"
+        "Area-2 Area-2 Area-2 Area-2 Area-2";
+      -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      -ms-grid-rows: 15vh;
+      grid-template-rows: 15vh;
+    }
+
    }
    
    #w-node-c2f66583-d638-9c18-9b4e-9bbf75c44657-2baed364 {
@@ -1067,6 +1104,13 @@
      -ms-grid-column-span: 1;
    }
    
+   .grid-3>#w-node-c2f66583-d638-9c18-9b4e-9bbf75c44657-2baed364 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 7;
+  }
+
    #w-node-_1d3a5638-4ea1-fc8a-307b-d43d47d02dec-2baed364 {
      -ms-grid-row: 3;
      -ms-grid-row-span: 3;
@@ -1080,6 +1124,12 @@
      -ms-grid-column: 1;
    }
    
+   .grid-3>#w-node-_1d3a5638-4ea1-fc8a-307b-d43d47d02dec-2baed364 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+
    #w-node-d507b73e-ecb8-36ae-04b5-94848b2d7d35-c51206a1 {
      -ms-grid-row: 1;
      -ms-grid-column: 1;
@@ -1100,6 +1150,13 @@
      grid-area: Area-2;
    }
    
+   .grid-3>#w-node-af755a67-1264-37dc-6a5c-539e2600d1ef-c51206a1 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  
+
    .grid-2>#w-node-dd29de73-a460-d26c-21cc-713394f8e67e-c51206a1 {
      -ms-grid-row: 2;
      -ms-grid-row-span: 1;
@@ -1124,6 +1181,13 @@
      -ms-grid-column: 2;
      -ms-grid-column-span: 1;
    }
+
+   .grid-3>#w-node-af755a67-1264-37dc-6a5c-539e2600d1fa-c51206a1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+  }
+  
    
    @media screen and (min-width: 1920px) {
      #w-node-c2f66583-d638-9c18-9b4e-9bbf75c44657-2baed364 {
@@ -1140,6 +1204,14 @@
        -ms-grid-column: 2;
        -ms-grid-column-span: 1;
      }
+
+     .grid-3>#w-node-c2f66583-d638-9c18-9b4e-9bbf75c44657-2baed364 {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 7;
+    }
+
    
      #w-node-_1d3a5638-4ea1-fc8a-307b-d43d47d02dec-2baed364 {
        -ms-grid-row: 3;
@@ -1158,6 +1230,12 @@
        -ms-grid-column: 1;
      }
    
+     .grid-3>#w-node-_1d3a5638-4ea1-fc8a-307b-d43d47d02dec-2baed364 {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+    }
+
      #w-node-dd29de73-a460-d26c-21cc-713394f8e67e-c51206a1 {
        -ms-grid-row: 3;
        -ms-grid-row-span: 3;
@@ -1174,6 +1252,12 @@
        -ms-grid-row-span: 1;
        -ms-grid-column: 1;
      }
+
+     .grid-3>#w-node-af755a67-1264-37dc-6a5c-539e2600d1ef-c51206a1 {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+    }
    }
    
    @media screen and (max-width: 479px) {
@@ -1458,3 +1542,28 @@
      font-style: normal;
      font-display: swap;
    }
+
+   .grid-3 {
+    grid-auto-flow: row dense;
+    grid-column-gap: 0vh;
+    grid-row-gap: 0vh;
+    grid-template-areas: "Area Area Area Area Area"
+      "Area-2 Area-3 Area-3 Area-3 Area-3"
+      ". Area-4 Area-4 Area-4 Area-4";
+    -ms-grid-columns: minmax(0vh, auto) 0vh minmax(75vh, auto) 0vh minmax(75vh, auto);
+    grid-template-columns: minmax(0vh, auto) minmax(75vh, auto) minmax(75vh, auto);
+    -ms-grid-rows: 10vh 0vh auto 0vh 10vh;
+    grid-template-rows: 10vh auto 10vh;
+  }
+
+  .grid-3 {
+    grid-auto-columns: auto;
+    grid-row-gap: 0vh;
+    grid-template-areas: "Area Area Area Area Area"
+      "Area-2 Area-3 Area-3 . ."
+      "Area-2 Area-3 Area-3 . .";
+    -ms-grid-columns: minmax(10vh, auto) minmax(150vh, auto);
+    grid-template-columns: minmax(10vh, auto) minmax(150vh, auto);
+    -ms-grid-rows: minmax(10vh, auto);
+    grid-template-rows: minmax(10vh, auto);
+  }
