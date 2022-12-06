@@ -30,6 +30,11 @@ app.get('/team/', (req, res) => {
     res.render('team')
 })
 
+app.get('/result/', (req, res) => {
+    res.render('result')
+})
+
+
 app.get('/404/', (req, res) => {
     res.render('404')
 })
@@ -41,6 +46,7 @@ app.get('/game/', (req, res) => {
 app.use(function(req,res){
     res.status(404).render('404');
 });
+app.use(errorHandler)//Обработка ошибки, последний мидлеваре ВСЕГДА ДОЛЖЕН БЫТЬ В САМОМ КОНЦЕ!!!к
 const start = async () => {
     try {
        // await sequelize.authenticate()
@@ -51,6 +57,8 @@ const start = async () => {
         console.log(e)
     }
 }
+
+
 
 start()
 
