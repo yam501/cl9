@@ -26,10 +26,21 @@ app.get('/team/', (req, res) => {
     res.render('team')
 })
 
+app.get('/404/', (req, res) => {
+    res.render('404')
+})
+
+app.get('/game/', (req, res) => {
+    res.render('game')
+})
+
+app.use(function(req,res){
+    res.status(404).render('404');
+});
 const start = async () => {
     try {
-  //      await sequelize.authenticate()
-    //    await sequelize.sync()
+       // await sequelize.authenticate()
+       // await sequelize.sync()
         console.log(__dirname)
         app.listen(PORT, () => console.log('Server started on port %s', PORT))
     } catch (e) {
