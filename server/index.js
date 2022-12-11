@@ -13,7 +13,7 @@ const PORT = process.env.PORT
 const app = express()
 app.use(cors())
 app.use(express.json())
-app.use(express.static(path.resolve(__dirname,'static'))) // Раздаем папку со статикой всем
+app.use(express.static(path.resolve(__dirname, 'static'))) // Раздаем папку со статикой всем
 app.use(fileUpload({}))
 
 app.use(express.static(path.join(__dirname, '../public')))
@@ -43,14 +43,14 @@ app.get('/game/', (req, res) => {
     res.render('game')
 })
 
-app.use(function(req,res){
+app.use(function (req, res) {
     res.status(404).render('404');
 });
 app.use(errorHandler)//Обработка ошибки, последний мидлеваре ВСЕГДА ДОЛЖЕН БЫТЬ В САМОМ КОНЦЕ!!!к
 const start = async () => {
     try {
-       // await sequelize.authenticate()
-       // await sequelize.sync()
+        await sequelize.authenticate()
+        await sequelize.sync()
         console.log(__dirname)
         app.listen(PORT, () => console.log('Server started on port %s', PORT))
     } catch (e) {
