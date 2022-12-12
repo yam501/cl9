@@ -490,7 +490,7 @@ html.w-mod-js *[data-ix="emk-d"] {
   }
 
   table {
-    width: 125vh;
+    width: auto;
     /* Ширина таблицы */
     background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(15%, rgba(18, 55, 84, 0.55)), color-stop(50%, rgba(18, 55, 84, 0.24)), color-stop(85%, rgba(18, 55, 84, 0.55)), to(#000));
     color: white;
@@ -516,7 +516,7 @@ html.w-mod-js *[data-ix="emk-d"] {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: white;
-    width: 100vh;
+    width: 150vh;
     height: 10vh;
   }
 
@@ -524,9 +524,9 @@ html.w-mod-js *[data-ix="emk-d"] {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: white;
-    width: 80vh;
+    width: 100vh;
     height: 4vh;
-    padding: 1vh;
+    padding: 3vh;
     border-top: 0.1vh solid #0000005d;
     border-bottom: 0.1vh solid #0000005d;
 
