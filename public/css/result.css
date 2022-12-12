@@ -147,41 +147,6 @@
   object-fit: contain;
 }
 
-.menu {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: auto;
-  bottom: 0%;
-  display: block;
-  overflow: visible;
-  width: 9vh;
-  height: 0vh;
-  min-height: 0vh;
-  min-width: 0vh;
-  margin-top: 25vh;
-  padding-top: 0px;
-  padding-bottom: 48vh;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 auto;
-  -ms-flex: 0 auto;
-  flex: 0 auto;
-  border-style: solid;
-  border-width: 0.1vh;
-  border-color: rgba(18, 55, 84, 0.55);
-  border-radius: 0px;
-  background-color: #000;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(50%, rgba(18, 55, 84, 0.55)), to(#000));
-  background-image: linear-gradient(180deg, #000, rgba(18, 55, 84, 0.55) 50%, #000);
-  outline-color: #333;
-  outline-offset: 0vh;
-  outline-style: none;
-  outline-width: 0.5vh;
-  color: #333;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-
 .game_link {
   position: absolute;
   display: block;
@@ -278,6 +243,7 @@
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   font-weight: 600;
+  margin-top: 10vh;
 }
 
 .text-block {
@@ -287,8 +253,31 @@
 
 .game {
   position: static;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
+  font-size: 5vh;
+  line-height: 5vh;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 10vh;
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 1s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s; /* Задержка перед началом */
+    }
+    @keyframes show{
+      0%{
+      opacity:0;
+      }
+      100% {
+      opacity:1;
+      }
 }
 
 .emk-d-_block {
@@ -344,6 +333,19 @@
   color: #333;
   -o-object-fit: contain;
   object-fit: contain;
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 1s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s; /* Задержка перед началом */
+    }
+    @keyframes show{
+      0%{
+      opacity:0;
+      }
+      100% {
+      opacity:1;
+      }
 }
 
 .body-5 {
@@ -380,6 +382,19 @@
   top: 16%;
   right: auto;
   bottom: 0%;
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s; /* Задержка перед началом */
+    }
+    @keyframes show{
+      0%{
+      opacity:0;
+      }
+      100% {
+      opacity:1;
+      }
 }
 
 .turnir_name {
@@ -453,7 +468,7 @@
   -ms-flex-align: stretch;
   align-items: stretch;
 }
-
+game
 html.w-mod-js *[data-ix="emk-d"] {
   display: none;
   opacity: 0;
@@ -475,31 +490,6 @@ html.w-mod-js *[data-ix="emk-d"] {
 
   .res_link {
     margin-top: 25.5vh;
-  }
-
-  .menu {
-    position: fixed;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    border-style: solid;
-    border-width: 0.1vh;
-    border-color: rgba(18, 55, 84, 0.55);
-    background-color: transparent;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(50%, rgba(18, 55, 84, 0.55)), to(#000));
-    background-image: linear-gradient(180deg, #000, rgba(18, 55, 84, 0.55) 50%, #000);
-    outline-color: #333;
-    outline-offset: 0vh;
-    outline-style: none;
-    outline-width: 0.5vh;
-    background-clip: border-box;
-    -webkit-text-fill-color: inherit;
   }
 
   .game_link {
@@ -576,6 +566,19 @@ html.w-mod-js *[data-ix="emk-d"] {
     outline-width: 0.5vh;
     background-clip: border-box;
     -webkit-text-fill-color: inherit;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 1s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s; /* Задержка перед началом */
+    }
+    @keyframes show{
+      0%{
+      opacity:0;
+      }
+      100% {
+      opacity:1;
+      }
   }
 
   .section {
@@ -721,6 +724,19 @@ html.w-mod-js *[data-ix="emk-d"] {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s; /* Задержка перед началом */
+    }
+    @keyframes show{
+      0%{
+      opacity:0;
+      }
+      100% {
+      opacity:1;
+      }
   }
 
   .turnir_name {
