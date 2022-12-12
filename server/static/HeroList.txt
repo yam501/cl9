@@ -1,0 +1,29 @@
+G1 M1 	17:10	Dire	6853770676
+Drow Ranger 	10276	8/0/2
+Storm Spirit	8770	8/1/7
+Broodmother	9878	5/0/9
+Techies		6322	12/1/7
+Ogre Magi	3677	1/1/9
+
+G1 M2	20:49	Radiant	6853876025
+Dazzle		11296	11/2/8	
+Tiny		12385	20/1/10
+Beastmaster	11044	7/2/16
+Rubick		6832	6/1/19
+Undying		5461	2/2/19
+
+G2 M1	26:20	Dire	6895365834
+Razor		16091	11/4/7
+Void Spirit	12405	6/0/21
+Primal Beast	12436	13/1/19
+Chen		10324	8/0/22
+Bane		6753	2/1/16
+
+G2 M2	31:41	Radiant	6895476109
+Gyro		24695	14/1/5
+Puck		16522	9/3/18
+Pudge		13235	5/5/19
+Techies		16063	12/1/13
+Lich		7169	2/5/19
+
+

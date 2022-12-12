@@ -1,0 +1,27 @@
+G1 M1
+Drow Ranger
+Broodmother
+Storm Spirit
+Techies
+Ogre Magi
+
+G1 M2
+Dazzle
+Beastmaster
+Tiny
+Rubick
+Undying
+
+G2 M1
+Primal Beast
+Bane
+Void Spirit
+Razor
+Chen
+
+G2 M2
+Pudge
+Lich
+Puck
+Gyro
+Techies

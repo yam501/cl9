@@ -34,7 +34,6 @@ app.get('/result/', (req, res) => {
     res.render('result')
 })
 
-
 app.get('/404/', (req, res) => {
     res.render('404')
 })

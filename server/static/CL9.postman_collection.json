@@ -1,18 +1,18 @@
 {
 	"info": {
-		"_postman_id": "e6a72e2e-98cb-4120-8f9e-921aa3617ef9",
+		"_postman_id": "b78e7929-62f8-4627-bd10-1a4a269a2437",
 		"name": "CL9",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "http://localhost:5000/api/mapstat",
+			"name": "PLAYER1",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"NetWorth\": \"9878\",\r\n    \"KDA\":\"17:10\",\r\n    \"mapId\":\"6853770676\",\r\n    \"playerId\":1,\r\n    \"heroName\":\"Storm Spirit\"\r\n}",
+					"raw": "{\r\n    \"Name\":\"Сергей\",\r\n    \"Nickname\":\"LAYnay\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,7 +20,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/mapstat",
+					"raw": "http://localhost:5000/api/player",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -28,20 +28,20 @@
 					"port": "5000",
 					"path": [
 						"api",
-						"mapstat"
+						"player"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:5000/api/map",
+			"name": "PLAYER2",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Id\": \"6853770676\",\r\n    \"Time\":\"17:10\",\r\n    \"Side\":\"Dire\",\r\n    \"ResultMap\":true,\r\n    \"gameId\":1\r\n}",
+					"raw": "{\r\n    \"Name\":\"Михаил\",\r\n    \"Nickname\":\"yam\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -49,7 +49,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/map",
+					"raw": "http://localhost:5000/api/player",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -57,20 +57,107 @@
 					"port": "5000",
 					"path": [
 						"api",
-						"map"
+						"player"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:5000/api/game",
+			"name": "PLAYER3",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Enemy\":\"EMK(D)\",\r\n    \"ResultGame\":\"2:0\"\r\n}",
+					"raw": "{\r\n    \"Name\":\"Валерий\",\r\n    \"Nickname\":\"mirel\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/player",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"player"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PLAYER4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Михаил\",\r\n    \"Nickname\":\"blade\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/player",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"player"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PLAYER5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Владислав\",\r\n    \"Nickname\":\"Coldside\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/player",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"player"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GAME1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Enemy\":\"Гимназия №99(А)\",\r\n    \"ResultGame\":\"2:0\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -93,7 +180,36 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:5000/api/hero",
+			"name": "GAME2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Enemy\":\"ЕМК(Д)\",\r\n    \"ResultGame\":\"2:0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/game",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:DROW",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -102,13 +218,53 @@
 					"formdata": [
 						{
 							"key": "Name",
-							"value": "Storm Spirit",
+							"value": "Drow Ranger",
 							"type": "default"
 						},
 						{
 							"key": "Photo",
 							"type": "file",
-							"src": "/F:/Study/2Year/cl9/server/static/76d7073a-f556-4617-9f7f-5dd2748f9e54.png"
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Drow_Ranger_icon.webp"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:BROOD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Broodmother",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Broodmother_icon.webp"
 						}
 					]
 				},
@@ -128,21 +284,27 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:5000/api/player",
+			"name": "HERO:STROM",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"Name\":\"Misha\",\r\n    \"Nickname\":\"yam\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Storm Spirit",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Storm_Spirit_icon.webp"
 						}
-					}
+					]
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/player",
+					"raw": "http://localhost:5000/api/hero",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -150,7 +312,1263 @@
 					"port": "5000",
 					"path": [
 						"api",
-						"player"
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:TECHIES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Techies",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Techies_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:OGRE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Ogre Magi",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Ogre_Magi_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:DAZZLE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Dazzle",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Dazzle_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:BEASTMASTER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Beastmaster",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Beastmaster_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:TINY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Tiny",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Tiny_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:RUBICK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Rubick",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Rubick_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:UNDYING",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Undying",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Undying_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:RAZOR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Razor",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Razor_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:VOIDSPIRIT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Void Spirit",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Void_Spirit_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:PRIMAL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Primal Beast",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Primal_Beast_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:CHEN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Chen",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Chen_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:BANE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Bane",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Bane_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:GYRO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Gyrocopter",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Gyrocopter_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:PUCK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Puck",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Puck_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:PUDGE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Pudge",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Pudge_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HERO:LICH",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Lich",
+							"type": "default"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/F:/Study/2Year/cl9/server/static/Heroes/Lich_icon.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/hero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "G1M1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"6853770676\",\r\n    \"Time\":\"17:10\",\r\n    \"Side\":\"Dire\",\r\n    \"ResultMap\":true,\r\n    \"gameId\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/map",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "G1M2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"6853876025\",\r\n    \"Time\":\"20:49\",\r\n    \"Side\":\"Radiant\",\r\n    \"ResultMap\":true,\r\n    \"gameId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/map",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "G2M1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"6895365834\",\r\n    \"Time\":\"26:20\",\r\n    \"Side\":\"Dire\",\r\n    \"ResultMap\":true,\r\n    \"gameId\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/map",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "G2M2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"6895476109\",\r\n    \"Time\":\"31:41\",\r\n    \"Side\":\"Radiant\",\r\n    \"ResultMap\":true,\r\n    \"gameId\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/map",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:1 G:1 M:1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"10276\",\r\n    \"KDA\":\"8/0/2\",\r\n    \"mapId\":\"6853770676\",\r\n    \"playerId\":1,\r\n    \"heroName\":\"Drow Ranger\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:2 G:1 M:1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"8770\",\r\n    \"KDA\":\"8/1/7\",\r\n    \"mapId\":\"6853770676\",\r\n    \"playerId\":2,\r\n    \"heroName\":\"Storm Spirit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:3 G:1 M:1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"9878\",\r\n    \"KDA\":\"5/0/9\",\r\n    \"mapId\":\"6853770676\",\r\n    \"playerId\":3,\r\n    \"heroName\":\"Broodmother\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:4 G:1 M:1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"6322\",\r\n    \"KDA\":\"12/1/7\",\r\n    \"mapId\":\"6853770676\",\r\n    \"playerId\":4,\r\n    \"heroName\":\"Techies\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:5 G:1 M:1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"3677\",\r\n    \"KDA\":\"1/1/9\",\r\n    \"mapId\":\"6853770676\",\r\n    \"playerId\":5,\r\n    \"heroName\":\"Ogre Magi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:1 G:1 M:2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"11296\",\r\n    \"KDA\":\"11/2/8\",\r\n    \"mapId\":\"6853876025\",\r\n    \"playerId\":1,\r\n    \"heroName\":\"Dazzle\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:2 G:1 M:2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"12385\",\r\n    \"KDA\":\"20/1/10\",\r\n    \"mapId\":\"6853876025\",\r\n    \"playerId\":2,\r\n    \"heroName\":\"Tiny\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:3 G:1 M:2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"11044\",\r\n    \"KDA\":\"7/2/16\",\r\n    \"mapId\":\"6853876025\",\r\n    \"playerId\":3,\r\n    \"heroName\":\"Beastmaste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:4 G:1 M:2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"6832\",\r\n    \"KDA\":\"6/1/19\",\r\n    \"mapId\":\"6853876025\",\r\n    \"playerId\":4,\r\n    \"heroName\":\"Rubick\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:5 G:1 M:2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"5461\",\r\n    \"KDA\":\"2/2/19\",\r\n    \"mapId\":\"6853876025\",\r\n    \"playerId\":5,\r\n    \"heroName\":\"Undying\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:1 G:2 M:1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"16091\",\r\n    \"KDA\":\"11/4/7\",\r\n    \"mapId\":\"6895365834\",\r\n    \"playerId\":1,\r\n    \"heroName\":\"Razor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:2 G:2 M:1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"12405\",\r\n    \"KDA\":\"6/0/21\",\r\n    \"mapId\":\"6895365834\",\r\n    \"playerId\":2,\r\n    \"heroName\":\"Void Spirit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:3 G:2 M:1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"12436\",\r\n    \"KDA\":\"13/1/19\",\r\n    \"mapId\":\"6895365834\",\r\n    \"playerId\":3,\r\n    \"heroName\":\"Primal Beast\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:4 G:2 M:1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"10324\",\r\n    \"KDA\":\"8/0/22\",\r\n    \"mapId\":\"6895365834\",\r\n    \"playerId\":4,\r\n    \"heroName\":\"Chen\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:5 G:2 M:1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"6753\",\r\n    \"KDA\":\"2/1/16\",\r\n    \"mapId\":\"6895365834\",\r\n    \"playerId\":5,\r\n    \"heroName\":\"Bane\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:1 G:2 M:2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"24695\",\r\n    \"KDA\":\"14/1/5\",\r\n    \"mapId\":\"6895476109\",\r\n    \"playerId\":1,\r\n    \"heroName\":\"Gyro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:2 G:2 M:2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"16522\",\r\n    \"KDA\":\"9/3/18\",\r\n    \"mapId\":\"6895476109\",\r\n    \"playerId\":2,\r\n    \"heroName\":\"Puck\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:3 G:2 M:2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"13235\",\r\n    \"KDA\":\"5/5/19\",\r\n    \"mapId\":\"6895476109\",\r\n    \"playerId\":3,\r\n    \"heroName\":\"Pudge\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:4 G:2 M:2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"16063\",\r\n    \"KDA\":\"12/1/13\",\r\n    \"mapId\":\"6895476109\",\r\n    \"playerId\":4,\r\n    \"heroName\":\"Techies\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAPSTAT P:5 G:2 M:2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NetWorth\": \"7169\",\r\n    \"KDA\":\"2/5/19\",\r\n    \"mapId\":\"6895476109\",\r\n    \"playerId\":5,\r\n    \"heroName\":\"Lich\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mapstat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mapstat"
 					]
 				}
 			},
