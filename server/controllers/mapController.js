@@ -20,7 +20,11 @@ class MapController {
             return next(ApiError.badRequest('Не задано поле Id'))
         }
         res.json(map)
-
+    }
+    async getAll(req, res) {
+        const {gameId} = req.params
+        const map = await Map.findAll({where: {gameId }})
+        res.json(map)
     }
 }
 module.exports = new MapController()

@@ -22,6 +22,10 @@ class PlayerController {
         res.json(player)
 
     }
+    async getAll(req, res) {
+        const player = await Player.findAll()
+        res.json(player)
+    }
 
 }
 module.exports = new PlayerController()

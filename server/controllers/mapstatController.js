@@ -13,13 +13,14 @@ class MapStatController {
         }
     }
 
-    async getOne(req, res, next) {
-        const { mapId, playerId } = req.params
-        const mapstat = await MapStat.findOne({ where: { mapId, playerId } })
+    async getAll(req, res, next) {
+        const { mapId, playerId } = req.query
+        let mapstat
+        mapstat = await MapStat.findAll({ where: { mapId, playerId } })
         if (!mapId && !playerId) {
             return next(ApiError.badRequest('Не заданы необходимые поля'))
         }
-        res.json(mapstat)
+        return res.json(mapstat)
     }
 }
 module.exports = new MapStatController()

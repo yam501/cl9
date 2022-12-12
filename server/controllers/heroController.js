@@ -25,6 +25,10 @@ class HeroController {
         }
         res.json(hero)
     }
+    async getAll(req, res) {
+        const hero = await Hero.findAll()
+        res.json(hero)
+    }
 }
 module.exports = new HeroController()
 //Name,Photo

@@ -20,6 +20,10 @@ class GameController {
         }
         res.json(game)
     }
+    async getAll(req, res) {
+        const game = await Game.findAll()
+        res.json(game)
+    }
 }
 module.exports = new GameController()
 //Id,IdMap,Enemy,ResultGame
