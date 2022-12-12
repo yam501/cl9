@@ -827,6 +827,7 @@ html.w-mod-js *[data-ix="emk-d"] {
   }
 
   .body2 {
+    scroll-behavior: smooth;
     overflow: auto;
     -o-object-fit: contain;
     object-fit: contain;

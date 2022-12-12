@@ -291,14 +291,13 @@ body {
   display: block;
   overflow: hidden;
   margin-top: 1vh;
-  margin-left: 45vh;
   padding-top: 0px;
   padding-left: 0px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
- 
+
 }
 
 @keyframes show {
@@ -315,6 +314,7 @@ body {
   background-image: url("/image/bg.jpg");
   background-position: 0% 50%;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .grid-1 {
@@ -367,8 +367,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  margin-left: 5vh;
-  cursor: pointer;
+
 }
 
 .games {
@@ -501,6 +500,7 @@ html.w-mod-js *[data-ix="emk-d"] {
     border-collapse: collapse;
     display: none;
     opacity: 0;
+    margin-left: 40vh;
     /*Элемент полностью прозрачный (невидимый)*/
     transition: 1s;
     /*Скорость перехода состояния элемента*/
@@ -513,12 +513,16 @@ html.w-mod-js *[data-ix="emk-d"] {
   }
 
   th {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     color: white;
     width: 100vh;
     height: 10vh;
   }
 
   td {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     color: white;
     width: 80vh;
     height: 4vh;
