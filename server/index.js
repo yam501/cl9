@@ -48,8 +48,8 @@ app.use(function (req, res) {
 app.use(errorHandler)//Обработка ошибки, последний мидлеваре ВСЕГДА ДОЛЖЕН БЫТЬ В САМОМ КОНЦЕ!!!к
 const start = async () => {
     try {
-        // await sequelize.authenticate()
-        // await sequelize.sync()
+        await sequelize.authenticate()
+        await sequelize.sync()
         console.log(__dirname)
         app.listen(PORT, () => console.log('Server started on port %s', PORT))
     } catch (e) {
